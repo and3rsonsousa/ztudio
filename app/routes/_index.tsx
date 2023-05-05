@@ -1,7 +1,15 @@
 import { User } from "lucide-react";
 import Button from "~/components/Button";
 
+let initialDate = Date.now();
+
 export const config = { runtime: "edge" };
+
+export function headers() {
+  return {
+    "x-edge-age": Date.now() - initialDate,
+  };
+}
 
 export default function Index() {
   return (
