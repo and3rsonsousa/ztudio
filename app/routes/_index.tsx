@@ -1,6 +1,8 @@
 import { User } from "lucide-react";
 import Button from "~/components/Button";
 
+export const config = { runtime: "edge" };
+
 export default function Index() {
   return (
     <div className="selection:bg-brand selection:text-white">
